@@ -51,7 +51,7 @@ def play_stream(url):
 def play_all_streams():
     """Cycles through all RTSP streams with a 30-second wait time between each, looping until stopped."""
     player = xbmc.Player()
-    while not player.isPlaying():
+    while True:
         for stream in streams:
             debug(f"Playing stream: {stream['name']}")
             player.play(stream["url"])
@@ -59,7 +59,6 @@ def play_all_streams():
             if not player.isPlaying():
                 debug("Player stopped")
                 return
-    info("leaving play_all_streams")
         
 def router(paramstring):
     """Route the request based on the parameters."""
