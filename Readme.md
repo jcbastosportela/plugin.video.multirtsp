@@ -1,0 +1,1 @@
+This addon displays multiple RTSP streams configured by the user.

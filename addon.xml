@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addon id="plugin.video.multirtsp" version="1.0.1" name="Multi RTSP Viewer" provider-name="jcbastosportela">
+    <requires>
+    <import addon="xbmc.python" version="3.0.1"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="main.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>View multiple RTSP streams</summary>
+        <description>This addon displays multiple RTSP streams configured by the user.</description>
+        <platform>all</platform>
+        <language>en</language>
+        <assets>
+            <icon>resources/images/icon.png</icon>
+            <fanart>resources/images/fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>

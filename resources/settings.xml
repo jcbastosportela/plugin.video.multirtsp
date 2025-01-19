@@ -1,0 +1,7 @@
+<settings>
+    <category label="Settings">
+        <setting id="_FIRST_TIME"  type="bool" label=""         visible="false" default="true"/>
+        <setting id="STREAM_NAMES" type="text" label="RTSP Stream Names (comma sepparated)" default="My Stream" />
+        <setting id="STREAM_URLS" type="text" label="RTSP Stream URLs (comma sepparated)" default="rtsp://170.93.143.139/rtplive/470011e600ef003a004ee33696235daa" />
+    </category>
+</settings>
