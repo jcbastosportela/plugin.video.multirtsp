@@ -55,10 +55,11 @@ def play_all_streams():
         for stream in streams:
             debug(f"Playing stream: {stream['name']}")
             player.play(stream["url"])
-            xbmc.sleep(30000)  # Wait for 30 seconds (30000 milliseconds)
+            xbmc.sleep(addon_settings.PLAY_TIME*1000)  # Wait for 30 seconds (30000 milliseconds)
             if not player.isPlaying():
                 debug("Player stopped")
                 return
+    info("leaving play_all_streams")
         
 def router(paramstring):
     """Route the request based on the parameters."""
